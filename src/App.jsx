@@ -1,14 +1,12 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+
 import LoginMenu from './components/LoginMenu';
 
-const App = () => {
+function App() {
     return (
-        <BrowserRouter>
-            <div>
-                <Route exact path="/" component={LoginMenu} />
-            </div>
-        </BrowserRouter>
-    );
-};
+        <div>
+            <LoginMenu />
+        </div>
+    )
+}
 
-export default App;
+export default App
