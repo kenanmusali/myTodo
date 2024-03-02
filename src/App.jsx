@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import LoginMenu from './components/LoginMenu';
 
-function App() {
-  return (
-    <div>App</div>
-  )
-}
+const App = () => {
+    return (
+        <div>
+            <LoginMenu />
+        </div>
+    );
+};
 
-export default App
+export default App;
