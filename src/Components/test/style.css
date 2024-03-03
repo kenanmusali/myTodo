@@ -102,6 +102,18 @@ button:hover {
     -o-transition: all 0.4s;
 }
 
+.signin:hover {
+    background-color: rgb(184, 192, 168);
+    border: 1px dashed black;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
 
 
 input:focus {
@@ -109,3 +121,4 @@ input:focus {
     background-color: #FED3C0;
 
   }
+
