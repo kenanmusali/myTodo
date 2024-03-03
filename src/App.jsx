@@ -1,9 +1,9 @@
-import LoginMenu from './components/LoginMenu';
+import Test from './Components/test/index';
 
 function App() {
     return (
         <div>
-            <LoginMenu />
+            <Test />
         </div>
     )
 }

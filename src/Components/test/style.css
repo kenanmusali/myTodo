@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Mono", monospace;
+
+}
+
+body,
+html {
+    height: 100%;
+    background: no-repeat url('../Background/background.png');
+    background-size: cover;
+    cursor: url('../Cursor/CursorClassic.png'), auto !important;
+}
+
+.login-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed black;
+    width: fit-content;
+    padding: 3.5vw 2.5vw;
+    background-color: #dfdfdf;
+}
+
+input {
+    border: 1px dashed black;
+    background-color: #dfdfdf;
+    height: 2.5vw;
+    width: 18vw;
+    padding-inline: 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+button {
+    height: 2.5vw;
+    width: 18vw;
+    cursor: pointer;
+}
+
+p {
+    font-size: 0.8vw;
+    margin-bottom: 0.3vw;
+}
+
+.login {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 0.8vw;
+    margin-top: 2vw;
+}
+
+.signin {
+    border: 1px dashed black;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    background-color: #dfdfdf;
+}
+
+.userName {
+    margin-bottom: 1vw;
+}
+
+
+button:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+a:hover,
+input:hover,
+button:hover {
+    cursor: url('../Cursor/CursorClassic.png'), pointer !important;
+}
+
+.login:hover {
+    background-color: #CD998B;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+
+
+input:focus {
+    outline: none; /* Remove focus outline */
+
+  }
