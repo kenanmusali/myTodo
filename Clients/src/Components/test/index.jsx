@@ -26,24 +26,47 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const LoginMenu = () => {
+const LoginMenu = ({ setIsLogin }) => {
     const [isLoginMode, setIsLoginMode] = useState(true);
 
     const toggleMode = () => {
         setIsLoginMode(!isLoginMode);
     };
 
+    const [formData, setFormData] = useState({
+        userid: "",
+        passwordid: ""
+    })
+
+    const loginUser = (e) => {
+        e.preventDefault();
+        fetch("http://localhost:3000/data")
+            .then(res => res.json())
+            .then(data => {
+                let foundUser = data.find(user => user.username === formData.userid && user.password === formData.passwordid);
+                if (foundUser) {
+                    setIsLogin(true);
+                } else {
+                    alert("Username not Found.");
+                }
+                console.log(formData);
+            });
+    };
+    
+
     return (
         <div className="login-menu">
             <div className='userName'>
                 <p>User Name</p>
-                <input type="text" placeholder='@' />
+                <input type="text" placeholder='@' required maxLength={25}
+                    onChange={() => setFormData({ ...formData, userid: e.target.value })} />
             </div>
             <div>
                 <p>Password</p>
-                <input type="password" />
+                <input type="password" required maxLength={50}
+                    onChange={() => setFormData({ ...formData, passwordid: e.target.value })} />
             </div>
-            <a className='login'>{isLoginMode ? 'Log In' : 'Sign In'}</a>
+            <a onClick={loginUser} className='login'>{isLoginMode ? 'Log In' : 'Sign In'}</a>
             <a className='signin' onClick={toggleMode}>{isLoginMode ? 'No Account? Create One.' : 'Already have Account?'}</a>
         </div>
     );

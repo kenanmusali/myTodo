@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Test from './Components/test/index';
 import ToDo from './Components/ToDo';
 
@@ -7,7 +7,7 @@ const App = () => {
 
     return (
         <div>
-            {isLoginMode ? <ToDo /> : <Test />}
+            {isLoginMode ? <ToDo /> : <Test setIsLoginMode={setIsLoginMode} />}
         </div>
     )
 };
