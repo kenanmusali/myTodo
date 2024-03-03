@@ -41,7 +41,10 @@ input {
     cursor: pointer;
 }
 
-button {
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2.5vw;
     width: 18vw;
     cursor: pointer;
@@ -72,7 +75,7 @@ p {
 }
 
 
-button:hover {
+a:hover {
     background-color: black;
     border: 1px solid black;
     color: white;

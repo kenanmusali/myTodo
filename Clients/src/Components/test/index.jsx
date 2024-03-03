@@ -37,15 +37,14 @@ const LoginMenu = () => {
         <div className="login-menu">
             <div className='userName'>
                 <p>User Name</p>
-                <input type="text" placeholder='@'/>
+                <input type="text" placeholder='@' />
             </div>
             <div>
                 <p>Password</p>
                 <input type="password" />
             </div>
-
-            <button className='login'>{isLoginMode ? 'Log In' : 'Sign In'}</button>
-            <button className='signin' onClick={toggleMode}>{isLoginMode ? 'No Account? Create One.' : 'Already have Account?'}</button>
+            <a className='login'>{isLoginMode ? 'Log In' : 'Sign In'}</a>
+            <a className='signin' onClick={toggleMode}>{isLoginMode ? 'No Account? Create One.' : 'Already have Account?'}</a>
         </div>
     );
 };
