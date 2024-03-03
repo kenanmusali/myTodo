@@ -15,7 +15,7 @@ const LoginMenu = () => {
 
 
             <button className='login'>Log In</button>
-            <button className='signin'>No Account? Create.</button>
+            <button className='signin'>No Account? Create One.</button>
         </div>
     );
 };

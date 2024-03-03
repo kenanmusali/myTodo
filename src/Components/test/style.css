@@ -28,12 +28,12 @@ html {
     border: 1px dashed black;
     width: fit-content;
     padding: 3.5vw 2.5vw;
-    background-color: #dfdfdf;
+    background-color: #FBEAE0;
 }
 
 input {
     border: 1px dashed black;
-    background-color: #dfdfdf;
+    background-color: #FBEAE0;
     height: 2.5vw;
     width: 18vw;
     padding-inline: 1vw;
@@ -64,7 +64,7 @@ p {
     border: 1px dashed black;
     margin-top: 1vw;
     font-size: 0.8vw;
-    background-color: #dfdfdf;
+    background-color: #FBEAE0;
 }
 
 .userName {
@@ -91,9 +91,9 @@ button:hover {
 }
 
 .login:hover {
-    background-color: #CD998B;
+    background-color: #4157af;
     border: none;
-    color: black;
+    color: white;
     cursor: pointer;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -106,5 +106,6 @@ button:hover {
 
 input:focus {
     outline: none; /* Remove focus outline */
+    background-color: #FED3C0;
 
   }
