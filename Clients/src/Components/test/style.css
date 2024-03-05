@@ -120,7 +120,7 @@ button:hover {
 
 
 input:focus {
-    outline: none; /* Remove focus outline */
+    outline: none; 
     background-color: #FED3C0;
 
   }
